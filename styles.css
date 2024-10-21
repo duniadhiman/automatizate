@@ -1,45 +1,106 @@
+/* Fondo general y tipografía */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e3e4e8);
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
+/* Encabezado */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
+    background: linear-gradient(135deg, #4a90e2, #0072ff);
+    padding: 20px;
     text-align: center;
+    color: #fff;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
 }
 
-nav ul li {
-    display: inline;
+/* Navegación */
+nav {
+    background: #0072ff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
     margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
     text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
 }
 
+nav a:hover {
+    color: #f3f4f6;
+}
+
+/* Sección principal */
 section {
-    padding: 2em;
-    margin: 1em;
-    background-color: white;
-    border-radius: 8px;
+    padding: 60px;
+    background: #f9fafc;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0072ff;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Botones */
+button {
+    background: #0072ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
 }
